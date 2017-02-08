@@ -1,0 +1,5 @@
+spring:
+    datasource.url: jdbc:h2:mem:mydb
+    h2.console:
+        enabled: true
+        path: /console
