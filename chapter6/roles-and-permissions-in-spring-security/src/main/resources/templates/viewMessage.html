@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragments/headerAndNav :: header"/>
+    <body>
+        <div th:replace="fragments/headerAndNav :: navbar"/>
+        <div class="container">
+            <h1><span th:text="${message.title}">The message title</span></h1>
+            <span th:text="${message.text}">The message text</span>
+        </div>
+    </body>
+</html>
