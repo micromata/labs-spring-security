@@ -1,0 +1,11 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragments/headerAndNav :: header"/>
+    <body>
+        <div th:replace="fragments/headerAndNav :: navbar"/>
+        <div class="container">
+            <ul th:each="message : ${messages}">
+                <li><a href="viewMessage.html" th:href="@{'/message/' + ${message.id}}" th:text="${message.title}">The title</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
